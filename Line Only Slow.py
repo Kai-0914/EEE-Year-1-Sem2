@@ -67,9 +67,9 @@ def main():
                         pwmB.ChangeDutyCycle(right_speed)
                 
             else:
-                GPIO.output(IN1, GPIO.LOW)
+                GPIO.output(IN1, GPIO.HIGH)
                 GPIO.output(IN2, GPIO.LOW)
-                GPIO.output(IN3, GPIO.LOW)
+                GPIO.output(IN3, GPIO.HIGH)
                 GPIO.output(IN4, GPIO.LOW)                
 
             cv2.imshow("Frame", frame)
