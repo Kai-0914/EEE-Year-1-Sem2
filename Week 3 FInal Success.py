@@ -23,9 +23,9 @@ base_speed = 15
 pwmA.start(base_speed)
 pwmB.start(base_speed)
 
-Kp = 0.5   # Proportional gain (Start with 0.5)
-Ki = Kp * 0.01  # Integral gain (Start small)
-Kd = Kp * 0.1  # Derivative gain (Start small)
+Kp = 0.5   # Proportional gain
+Ki = Kp * 0.01  # Integral gain
+Kd = Kp * 0.1  # Derivative gain
 prev_error = 0
 integral = 0
 last_time = time.time()
